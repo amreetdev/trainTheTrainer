@@ -1,0 +1,50 @@
+<p>dialog works!</p>
+<h1 mat-dialog-title>Add Information</h1>
+<div mat-dialog-content>
+  <div class="example-container">
+    <form [formGroup]="addInfoForm">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your Name</mat-label>
+        <input formControlName="name" matInput placeholder="Amreet Singh" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your email</mat-label>
+        <input
+          formControlName="email"
+          matInput
+          placeholder="amreet@example.com"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-select formControlName="country" placeholder="Country">
+          <mat-option value="india">India</mat-option>
+          <mat-option value="canada">Canada</mat-option>
+          <mat-option value="USA">USA</mat-option>
+          <mat-option value="england">England</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your Contact Number</mat-label>
+        <input
+          formControlName="contactNumber"
+          matInput
+          placeholder="+1 647 746 0000"
+        />
+      </mat-form-field>
+    </form>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="warn" mat-dialog-close>Back</button>
+  <button
+    mat-raised-button
+    color="primary"
+    mat-dialog-close
+    (click)="addInformation()"
+  >
+    {{ actionBtn }}
+  </button>
+</div>

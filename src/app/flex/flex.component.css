@@ -1,0 +1,28 @@
+.container {
+  font-size: 30px;
+  font-family: baloo;
+  text-align: center;
+  display: flex;
+  max-width: 1200;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.single {
+  display: flex;
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 5px;
+  object-position: bottom;
+}
+
+img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.heading {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<p class="page">
+  <mat-form-field appearance="legacy">
+    <mat-label>Input 1</mat-label>
+    <input
+      matInput
+      type="number"
+      placeholder="Enter number1"
+      [(ngModel)]="input1"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Input 2</mat-label>
+    <input
+      matInput
+      type="number"
+      placeholder="Enter number1"
+      [(ngModel)]="input2"
+    />
+  </mat-form-field>
+</p>
+
+<p class="page">
+  <mat-form-field appearance="legacy">
+    <mat-label>Result</mat-label>
+    <input matInput placeholder="See Result Here" [(ngModel)]="result" />
+  </mat-form-field>
+</p>
+<p class="btn">
+  <button mat-raised-button class="btn" color="primary" (click)="add()">
+    ADD
+  </button>
+  <button mat-raised-button class="btn" color="accent" (click)="substract()">
+    Substract
+  </button>
+  <button mat-raised-button class="btn" color="primary" (click)="multiply()">
+    Multiply
+  </button>
+  <button mat-raised-button class="btn" color="warn" (click)="divide()">
+    Divide
+  </button>
+</p>
