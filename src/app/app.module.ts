@@ -23,8 +23,12 @@ import { DialogComponent } from './dialog/dialog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BasiCalculatorComponent } from './basi-calculator/basi-calculator.component';
 import { TodolistComponent } from './todolist/todolist.component';
-import { ParentChildComponent } from './parent-child/parent-child.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { PdfComponent } from './pdf/pdf.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
+import { ParentChildComponent } from './parent-child/parent-child.component';
+import { ReuseComponent } from './reuse/reuse.component';
 
 @NgModule({
   declarations: [
@@ -39,8 +43,12 @@ import { ChildParentComponent } from './child-parent/child-parent.component';
     ReactiveFormsComponent,
     BasiCalculatorComponent,
     TodolistComponent,
-    ParentChildComponent,
+    ParentComponent,
+    ChildComponent,
+    PdfComponent,
     ChildParentComponent,
+    ParentChildComponent,
+    ReuseComponent,
   ],
   imports: [
     BrowserModule,

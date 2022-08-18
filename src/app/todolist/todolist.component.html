@@ -1,1 +1,26 @@
 <p>todolist works!</p>
+<div class="container">
+  <mat-form-field appearance="legacy">
+    <input type="text" matInput placeholder="Enter new task" #task />
+  </mat-form-field>
+</div>
+
+<div class="container">
+  <button mat-flat-button color="primary" (click)="addTask(task.value)">
+    Add New Task
+  </button>
+</div>
+
+<br />
+
+<div class="container">
+  <ul *ngFor="let task of list">
+    <br />
+    <li>
+      {{ task.name }}
+      <button (click)="removeTask(task.id)" mat-stroked-button color="warn">
+        Remove Task
+      </button>
+    </li>
+  </ul>
+</div>

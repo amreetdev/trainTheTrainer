@@ -74,21 +74,14 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Others
+            Routing
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" routerLink="todolist">To Do List</a>
+              <a class="dropdown-item" routerLink="admin/login">User List</a>
             </li>
             <li>
-              <a class="dropdown-item" routerLink="parentchild"
-                >Parent to Child</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="childparent"
-                >Child to Parent</a
-              >
+              <a class="dropdown-item" routerLink="admin/list">Admin List</a>
             </li>
           </ul>
         </li>
@@ -102,16 +95,28 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Routing
+            Others
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" routerLink="admin/login">Login</a></li>
-            <li><a class="dropdown-item" routerLink="admin/list">List</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="todolist">To Do List</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="reuse">Reuse Component</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="parent">Child to Parent </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="parentchild"
+                >Parent to child</a
+              >
+            </li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/excelpdf">Dowmload Reports</a>
+          <a class="nav-link" routerLink="pdf">Download Reports</a>
         </li>
       </ul>
       <form class="d-flex">
